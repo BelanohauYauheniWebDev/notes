@@ -1,0 +1,49 @@
+.note {
+	padding: 25px;
+	height: 280px;
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+	background-color: blueviolet;
+	border-radius: 30px;
+
+	&__textarea {
+		flex: 1;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		resize: none;
+		line-height: 2;
+		font-size: 1rem;
+		span {
+			color: yellow;
+			font-size: 40px;
+		}
+	}
+
+	&__div {
+		background-color: transparent;
+		flex: 1;
+		outline: none;
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+
+		.data {
+			flex: 1;
+		}
+		.trash,
+		.pen {
+			cursor: pointer;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		.pen {
+			margin-right: 1rem;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.tags {
+	width: 200px;
+	background-color: lightgray;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	&__list {
+		flex: 1;
+		list-style: none;
+		.item__group {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			padding: 0.2rem 1rem;
+			.item {
+				&:hover {
+					color: rgb(138, 81, 81);
+					text-decoration: underline;
+				}
+			}
+
+			.delete {
+				padding: 0 0.5rem;
+				color: red;
+				cursor: pointer;
+				font-size: 1.2rem;
+				&:hover {
+					color: rgb(3, 3, 3);
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	.reset {
+		text-transform: uppercase;
+		padding: 0.5rem;
+		cursor: pointer;
+	}
+}
